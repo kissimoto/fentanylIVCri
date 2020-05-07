@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fentanyl IV Fluid Bag Based CRI Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="fentanyl_min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Fentanyl IV Fluid Bag Based CRI Infusions</h1>
+    </header>
+    
+    <h3>Drug concentration of Fentanyl = 0.05mg/ml</h3>
+   <br>
+    <!-- <div class='wrapper'>
+        <label for=weight>Animal's weight</label>
+        <input type=number id=weight required value='' placeholder=kg>
+        <br>
+        <label for=plannedFluidRate>Planned Fluid Rate</label>
+        <input type=number  id=plannedFluidRate required value='' placeholder=ml/kg/hr>
+        <br>
+        <label for=dose_rate>Drug Dose Rate</label>
+        <input type='number' id=dose_rate required value='' placeholder=microgram/kg/hr>
+        <br>
+        <label for=bagSize>Fluid Bag Size</label>
+        <select id=bagSize>
+            <option value='250'>250 ml</option>
+            <option value='500'>500 ml</option>
+            <option value='1000'>1000 ml</option>
+        </select> -->
+        
+        <form>
+            <div class="form-group">
+                <label for="weight">Animal's weight</label>
+              <input type="text"  class="form-control" id="weight" required value="" placeholder="kg"> 
+            </div>
+
+            <div class="form-group">
+                <label for="plannedFluidRate">Planned Fluid Rate</label>
+              <input type="text" class="form-control" id="plannedFluidRate" required value= "" placeholder="ml/kg/hr">
+            </div>
+
+            <div class="form-group">
+                <label for="dose_rate">Drug Dose Rate</label>
+                <input type="text" class="form-control" id="dose_rate" required value="" placeholder="microgram/kg/hr">  
+              </div>
+               
+              
+              <div class="form-group">
+                <label for="bagSize">Fluid Bag Size</label>
+                <select id="bagSize">
+                    <option value="250">250 ml</option>
+                    <option value="500">500 ml</option>
+                    <option value="1000">1000 ml</option>
+                </select>
+            </div> 
+        </form>
+     
+ 
+        <!-- <button onclick=fentanylIVprocess() id='submitbutton'>Calculate</button> -->
+        <button type="button" class="btn-success" onclick="fentanylIVprocess()" id="submitbutton">Calculate</button>
+    
+<!-- 
+  Same page result if wanted -->
+        <div id=result>
+    </div>
+   
+<script src=fentany_min.js></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html
