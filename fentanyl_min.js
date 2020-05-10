@@ -32,7 +32,8 @@ function fentanylIVprocess(){
     const drugVolumeInMicrogram = drugVolume / 1000
 
     const drugVolInMicroRound = (Math.round(drugVolumeInMicrogram * 100) / 100).toFixed(2)
-   
-    document.getElementById('result').innerHTML = "Fluid rate per hour = " + (Math.round(pfr * 100) / 100).toFixed(2) + " ml/hr <br>Drug volume = "  
-    + drugVolInMicroRound + " ml." 
+
+    
+     document.getElementById('result').innerHTML = "Fluid rate per hour = " + (Math.round(pfr * 100) / 100).toFixed(2) + " ml/hr <br>Drug volume = "  
+     + drugVolInMicroRound + " ml." 
 }
